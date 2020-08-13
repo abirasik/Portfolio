@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,
+li{
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+body{
+    background-color: #111;
+    color: #9f9f9f;
+    font-family: Poppins,sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+margin: 0;
+padding: 0;
+}
+
+.titel{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+}
+.titel p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    color: #9f9f9f;
+}
+.titel h2{
+    font-size: 46px;
+    margin-bottom: 37px;
+    font-weight: 700;
+    letter-spacing: -.25px;
+    line-height: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 9;
+}
+.titel .animeted-lin {
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    margin: 0 auto 0 auto;
+    position: relative;
+    right: 0;
+    width: 85px;
+    background-color: #f52955;
+}
+.titel .animeted-lin::after{
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: #101010;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px; 
+}
+.titel .animeted-lin::before{
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: #101010;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 4px;
+}
+@keyframes barAnimation{
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(85px);
+        transform: translateX(85px);
+    }
+}
+
+
+
+/* =============================
+           manu css start
+================================*/
+nav{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(53, 53, 53, .25);
+    padding: -10px 0;
+    transition: .4s;
+}
+nav .navbar-nav li{
+margin-right: 30px;;
+}
+nav .navbar-nav li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #f1f1f1;
+    background: transparent;
+    padding: 10px 10px;
+    position: relative;
+    transition: .6s;
+}
+nav ul li a:hover {
+    background: #fff;
+    color: #000000;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background: #f52955;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* =============================
+           manu css end
+================================*/
+
+/* =============================
+           banner css start
+================================*/
+#banner-part{
+    height: 100vh;
+    position: relative;
+}
+#banner-part .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+#banner-part .overlay h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+#banner-part .overlay h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    color: #ffffff;
+}
+#banner-part .overlay h4 span{
+    color: #f52955;
+    text-transform: capitalize;
+}
+#banner-part .overlay .arrow {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 1.5em;
+    display: block;
+    height: 0;
+    margin: 80px auto;
+    opacity: 0.4;
+    text-indent: -9999px;
+    transform-origin: 50% 50%;
+    width: 0;
+  }
+  #banner-part .overlay .down {
+    -webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
+    border-top: 1.5em solid #fff;
+    transition: .4s;
+  }
+
+  @-webkit-keyframes downarrow {
+    0% {
+      -webkit-transform: translateY(0);
+      opacity: 0.4;
+    }
+    100% {
+      -webkit-transform: translateY(0.4em);
+      opacity: 0.9;
+    }
+  }
+  #banner-part .overlay .down:hover{
+    border-top: 1.5em solid #f52955;
+  }
+
+#banner-part .overlay .sociel-icon{
+    position: absolute;
+    bottom: 50px;
+    right: 40px;;
+}
+#banner-part .overlay .sociel-icon a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #222222;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: .5s;
+}
+#banner-part .overlay .sociel-icon a:hover{
+    background: #f52955;
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* =============================
+           banner css end
+================================*/
+
+/* =============================
+           about css start
+================================*/
+#about-part{
+    margin: 100px 0;
+}
+
+#about-part .my-img{
+ background: #f1f1f1;
+ border-radius: 10px;
+ box-sizing: border-box;
+ overflow: hidden;
+}
+#about-part .my-img img{
+    width: 100%;
+    transition: .5s;
+}
+#about-part .my-img:hover img{
+    transform: scale(1.1);
+}
+
+#about-part .my-detail{
+    text-align: left;
+}
+#about-part .my-detail h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #f52955;
+}
+#about-part .my-detail h6{
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+#about-part .my-detail .detail p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.95;
+    padding-bottom: 29px;
+}
+#about-part .contacet-detail{
+    font-size: 15px;
+    margin-bottom: 4px;
+    padding: 29px 0;
+}
+#about-part .contact-detail .name{
+    margin-bottom: 10px;
+}
+#about-part .contact-detail .name p span{
+    color: #dadada;
+    font-weight: 400;
+    margin-right: 10px;
+}
+#about-part .contact-detail .name p a{
+    color: #f52955;
+}
+#about-part .download {
+    margin-top: 30px;
+}
+#about-part .download .cv{
+    display: inline-block;
+    margin-right: 120px;
+    font-size: 14px;
+    padding: 10px 35px;
+    border-radius: 50px;
+    background: #f52955;
+    color: #fff;
+    position: relative;
+}
+#about-part .download .cv::after{
+    content: '';
+    position: absolute;
+    top: 45%;
+    right: -100px;
+    width: 85px;
+    height: 2px;
+    background: rgba(255,255,255,.25);
+}
+#about-part .download ul{
+    display: inline-block;
+}
+#about-part .download ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 21px;
+    
+}
+#about-part .download ul li a{
+    color: #fff;
+    transition: .5s;
+}
+#about-part .download ul li:hover a{
+    color: #f52955;
+}
+#about-part .survice{
+    margin-top: 60px;
+}
+#about-part .survice .titel{
+    text-align: left;
+}
+#about-part .survice .titel p{
+    margin-bottom: 10px;
+}
+#about-part .survice .titel h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#about-part .survice .titel .animeted-lin{
+    margin-left: unset;
+    background-color: #fff;
+}
+#about-part .items{
+    margin-bottom: 15px;
+    padding: 30px;
+    background: transparent;
+    transition: .5s;
+    border-radius: 10px;
+}
+#about-part .items i{
+    color: #f52955;
+    font-size: 50px;
+    transition: .5s;
+}
+#about-part .items h6{
+    color: #f3f3f3;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    margin-bottom: 14px;
+    transition: .5s;
+}
+#about-part .items:hover {
+    background: #f1f1f1;
+    color: #2b2b2b;
+}
+#about-part .items:hover i{
+    color: #222222;
+}
+#about-part .items:hover h6{
+    color: #f52955;
+}
+
+#about-part .testi{
+    margin-top: 60px;
+}
+#about-part .testi .titel{
+    text-align: left;
+}
+#about-part .testi .titel p{
+    margin-bottom: 10px;
+}
+#about-part .testi .titel h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#about-part .testi .titel .animeted-lin{
+    margin-left: unset;
+    background-color: #fff;
+}
+#about-part .testi-slider{
+    position: relative;
+    margin-bottom: 40px;
+}
+#about-part .testi-slider .item{
+    padding: 30px 30px;
+}
+#about-part .testi-slider .item .one{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 30px;
+}
+#about-part .testi-slider .item .one .left{
+    display: flex;
+}
+#about-part .testi-slider .item .one .left .img{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+    border: 1px solid #fff;
+} 
+#about-part .testi-slider .item .one .left .img img{
+    width: 60px;
+}
+#about-part .testi-slider .item .one .left h6{
+    color: #efefef;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+#about-part .testi-slider .item .one .left p{
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+#about-part .testi-slider .item .one .right i{
+    font-size: 50px;
+    line-height: 1;
+    color: #f52955;
+}
+#about-part .testi-slider ul{
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#about-part .testi-slider ul li{
+    display: inline-block;
+    padding: 0 5px;
+
+}
+#about-part .testi-slider ul li button{
+    font-size: 0;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        border-radius: 50%;
+        border: 1px solid #ffff;
+        transition: .5s;
+}
+#about-part .testi-slider ul .slick-active button{
+    background: #ffffff;
+}
+
+
+
+/* =============================
+          about css end
+================================*/
+
+/* =============================
+           resume css start
+================================*/
+#resume-part{
+    margin: 80px 0;
+    background: url(../images/resume-bg.jpg) no-repeat bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 950px;
+}
+#resume-part .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+
+#resume-part .details h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    margin-left: 45px;
+}
+#resume-part .details h3 span{
+    font-size: 30px;
+    color: #f52955;
+    margin-right: 10px;
+}
+#resume-part .details .resume-item{
+    padding: 32px 48px;
+    margin-bottom: 10px;
+    position: relative;
+}
+#resume-part .details .resume-item::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #f52955;
+    transition: .5s;
+}
+#resume-part .details .resume-item:hover::after{
+    width: 78%;
+}
+#resume-part .details .resume-item h5{
+    margin-bottom: 9px;
+    font-size: 21px;
+    color: #f0f0f0;;
+}
+#resume-part .details .resume-item span{
+    display: inline-block;
+    color: #9f9f9f;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* =============================
+           resume css end
+================================*/
+
+/* =============================
+            portf0olio css start
+================================*/
+#portfolio-part .item-list{
+    text-align: center;  
+}
+#portfolio-part .item-list ul li{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    transition: .5s;
+     margin: 0 20px;
+     padding: 5px 0;
+}
+
+#portfolio-part .item-list ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #f52955;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+#portfolio-part .item-list ul li:hover{
+    color: #f52955;
+}
+#portfolio-part .item-list ul li:hover::after{
+    width: 100%;
+}
+#portfolio-part .port-item{
+    margin-top: 30px;
+}
+#portfolio-part .port-item .one{
+    margin-bottom: 30px;
+    
+}
+#portfolio-part .port-item .one .img{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: #f0f0f0;
+    position: relative;
+   
+}
+#portfolio-part .port-item .one .img img{
+    width: 100%;
+    height: 100%;
+    
+}
+#portfolio-part .port-item .one .img .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    transform: translate(-50%,-50%);
+    background: rgba(245, 41, 85, 0.6);
+    color: #fff;
+    text-align: center;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio-part .port-item .one .img .overlay a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: scale(0);
+    transition: .4s;
+}
+#portfolio-part .port-item .one .img:hover .overlay{
+    width: 95%;
+    height: 95%;
+}
+#portfolio-part .port-item .one .img:hover .overlay a{
+    transform: scale(1);
+}
+
+
+#portfolio-part .item-list .mixitup-control-active{
+    color: #f52955;
+}
+#portfolio-part .item-list .mixitup-control-active::after{
+   width: 100%;
+}
+/* =============================
+           portfolio css end
+================================*/
+
+/* =============================
+            contact css start
+================================*/
+#contact-part{
+    margin-top: 100px;
+}
+#contact-part .contact-form h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+#contact-part .form-gp{
+    margin-bottom: 25px;
+}
+#contact-part .form-gp input{
+    background-color: #161616;
+    color: #9f9f9f;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    font-size: 15px;
+    height: 44px;
+    padding: 9px 14px;
+}
+/* =============================
+          contact css end
+================================*/
