@@ -1,3 +1,32 @@
+// nav bar
+$(window).scroll(function () {
+  $scrollamout = $(window).scrollTop();
+
+  if ($scrollamout > 30) {
+      $(".menu").addClass("sticky")
+  } else {
+      $(".menu").removeClass("sticky")
+  }
+
+  if ($scrollamout > 500) {
+      $(".btop").fadeIn()
+  } else {
+      $(".btop").fadeOut()
+  }
+})
+
+// back to top
+
+$(".btop").click(function () {
+  $("html,body").animate({
+      scrollTop: 0
+  }, 2000)
+})
+
+
+
+
+
 // banner vegas slider
 
 $("#banner-part").vegas({
@@ -31,7 +60,7 @@ var typed = new Typed('.type', {
 $('.testi-slider').slick({
     dots: true,
     infinite: true,
-    autoplay: true,
+    // autoplay: true,
     speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -54,7 +83,7 @@ $('.testi-slider').slick({
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
