@@ -1,7 +1,6 @@
-
 /* ex-small device*/
 
-@media (min-width:320px) and (max-width:575px){
+@media (min-width:320px) and (max-width:575px) {
 
     /* navbar start */
     nav {
@@ -16,16 +15,18 @@
     nav ul li {
         padding-top: 5px 0;
     }
+
     nav .navbar-nav li {
         margin-right: 0;
     }
+
     nav .navbar-nav li a {
         font-size: 18px;
         color: #f1f1f1;
         padding: 10px 10px;
-       
+
     }
-   
+
     nav .btn {
         text-align: center;
         vertical-align: middle;
@@ -41,134 +42,153 @@
         border-radius: 0;
         transition: none;
     }
-    nav .mixitup-control-active .one{
+
+    nav .mixitup-control-active .one {
         transform: rotate(45deg);
     }
-    nav .mixitup-control-active .two{
+
+    nav .mixitup-control-active .two {
         display: none;
-        
+
     }
-    nav .mixitup-control-active .three{
+
+    nav .mixitup-control-active .three {
         transform: rotate(-45deg);
     }
-    nav .btn .one{
+
+    nav .btn .one {
         width: 30px;
         height: 3px;
         background: #fff;
         transition: .5s;
     }
-    nav .btn .two{
+
+    nav .btn .two {
         width: 40px;
         height: 3px;
         margin: 5px 0;
         background: #fff;
         transition: .5s;
     }
-    nav .btn .three{
+
+    nav .btn .three {
         width: 30px;
         height: 3px;
         background: #fff;
         transition: .5s;
     }
+
     .sticky {
-    background: rgba(0, 0, 0, .7);
-    padding: 8px 15px;
+        background: rgba(0, 0, 0, .7);
+        padding: 8px 15px;
     }
 
     /* navbar end*/
 
     /* banner start */
-    #banner-part{
-        height: 100vh;
+    #banner-part {
+        height: 570px;
     }
-    #banner-part .overlay h1{
+
+    #banner-part .overlay h1 {
         font-size: 45px;
         margin-top: 100px;
     }
-    #banner-part .overlay h4{
+
+    #banner-part .overlay h4 {
         font-size: 18px;
     }
-    
-    #banner-part .overlay .sociel-icon{
+
+    #banner-part .overlay .sociel-icon {
         bottom: 20px;
         right: 15px;
     }
-    #banner-part .overlay .sociel-icon a{
+
+    /* #banner-part .overlay .sociel-icon a{
         width: 25px;
         height: 25px;
         font-size: 14px;
         line-height: 24px;
-    }
-     /* nanner end*/
+    } */
+    /* nanner end*/
 
-     /*===========================
+    /*===========================
            about-part start
      ==============================*/
-     #about-part {
+    #about-part {
         margin: 50px 0;
     }
-    #about-part .titel{
+
+    #about-part .titel {
         margin-bottom: 50px;
     }
 
     #about-part .titel p {
-        font-size: 14px;
         margin-bottom: 10px;
     }
+
     #about-part .titel h2 {
-        font-size: 34px;
         margin-bottom: 25px;
     }
 
     #about-part .my-detail {
         margin-top: 30px;
     }
-    #about-part .my-detail h2{
+
+    #about-part .my-detail h2 {
         margin-bottom: 10px;
-        font-size: 21;
     }
+
     #about-part .my-detail h6 {
         font-size: 24px;
         margin-bottom: 10px;
-        
+
     }
+
     #about-part .my-detail .detail p {
         font-size: 14px;
         padding-bottom: 20px;
     }
-    #about-part .contact-detail .name{
+
+    #about-part .contact-detail .name {
         margin-bottom: 5px;
     }
+
     #about-part .contact-detail .name p span {
         margin-right: 10px;
-        font-size: 14px;
     }
+
     #about-part .download {
         margin-top: 15px;
     }
+
     #about-part .download {
         margin-top: 15px;
-    }    
-    #about-part .download .cv{
+    }
+
+    #about-part .download .cv {
         margin-right: 10px;
         padding: 10px 16px;
     }
-    #about-part .download .cv::after{
+
+    #about-part .download .cv::after {
         display: none;
     }
-    #about-part .download ul li{
+
+    #about-part .download ul li {
         margin-right: 8px;
     }
 
-    #about-part .survice .titel h2{
-        font-size: 34px;
-    }
-    #about-part .items{
+    #about-part .survice .titel h2 {}
+
+    #about-part .items {
         margin-bottom: 0px;
     }
-    #about-part .items i{
+
+    #about-part .items i {
         font-size: 45px;
     }
+
     #about-part .items:hover::after {
         width: 77%;
     }
@@ -176,170 +196,191 @@
     #about-part .testi {
         margin-top: 40px;
     }
-    #about-part .testi .titel h2{
-        font-size: 34px;
-    }
-    #about-part .testi-slider .item{
+
+    #about-part .testi-slider .item {
         padding: 10px;
     }
+
     #about-part .testi-slider .item .one .right i {
         font-size: 24px;
     }
-    #about-part .testi-slider .item .one .left h6{
+
+    #about-part .testi-slider .item .one .left h6 {
         margin-bottom: 5px;
     }
-    #about-part .testi-slider .item .one .left p{
-        font-size: 13px;
-    }
-    #about-part .testi-slider .item .one{
+
+    #about-part .testi-slider .item .one {
         margin-bottom: 20px;
     }
-    #about-part .testi-slider .item .item-p{
+
+    #about-part .testi-slider .item .item-p {
         font-size: 14px;
     }
-    #about-part .testi-slider ul{
-       bottom: -60px;
+
+    #about-part .testi-slider ul {
+        bottom: -60px;
     }
-     /*===========================
+
+    /*===========================
            about-part end
      ==============================*/
 
- /* resume part start*/
- #resume-part{
-     margin: 0px;
-     height: 1320px;
- }
- #resume-part .titel{
-     margin-bottom: 45px;
- }
- #resume-part .titel p {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-#resume-part .details h3 {
-	font-size: 26px;
-	margin-bottom: 0px;
-    margin-left: 0px;
-    margin-top: 40px;
-}
-#resume-part .details .resume-item {
-    padding: 25px 0px;
-    margin-bottom: 0px;
-}
-#resume-part .details .resume-item h5 {
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-#resume-part .details .resume-item span{
-    font-size: 13px;
-}
-#resume-part .details .resume-item p{
-    font-size: 14px;
-}
-#resume-part .details .resume-item:hover::after {
-	width: 96%;
-}
+    /* resume part start*/
+    #resume-part {
+        margin: 0px;
+        height: 1320px;
+    }
 
- /* resume part end*/
+    #resume-part .titel {
+        margin-bottom: 45px;
+    }
 
-/* portfolio part start*/
-#portfolio-part{
-    margin-top: 40px;
-}
-#portfolio-part .titel{
-    margin-bottom: 45px;
-}
-#portfolio-part .titel h2{
-    margin-bottom: 20px;
-}
-#portfolio-part .titel p {
-   font-size: 14px;
-   margin-bottom: 10px;
-   
-}
-#portfolio-part .item-list {
-	text-align: left;
-}
-#portfolio-part .item-list ul li{
-    margin: 0 9px;
-}
-#portfolio-part .port-item {
-	margin-top: 20px;
-}
+    #resume-part .titel p {
 
-/* portfolio part end*/
+        margin-bottom: 10px;
+    }
 
-/* contact part start */
-#contact-part {
-	margin-top: 40px;
-	margin-bottom: 35px;
-}
-#contact-part .titel{
-    margin-bottom: 40px;
-}
-#contact-part .titel p {
-	font-size: 14px;
-	margin-bottom: 14px;
-}
-#contact-part .titel h2 {
-	font-size: 40px;
-	margin-bottom: 20px;
-	
-}
-#contact-part .form-gp input {
-	font-size: 14px;
-	height: 44px;
-	padding: 8px 8px;
-	
-}
-#contact-part .fox {
-	padding-right: 18px;
-}
-#contact-part .btn {
-	padding: 10px 15px;
-	border-radius: 50px;
-	font-size: 15px;
-	
-}
-#contact-part .contact-info {
-	padding-left: 0px;
-	margin-top: 40px;
-}
-#contact-part .contact-info p {
-	font-size: 14px;
-	margin-bottom: 20px;
-}
-#contact-part .contact-info .one .fa {
-	top: 50%;
-	left: 15px;
-	
-}
-#contact-part .contact-info .one span i {
+    #resume-part .details h3 {
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    #resume-part .details .resume-item {
+        padding: 25px 0px;
+        margin-bottom: 0px;
+    }
+
+    #resume-part .details .resume-item h5 {
+        margin-bottom: 5px;
+    }
+
+    #resume-part .details .resume-item span {
+        font-size: 13px;
+    }
+
+    #resume-part .details .resume-item p {
+        font-size: 14px;
+    }
+
+    #resume-part .details .resume-item:hover::after {
+        width: 96%;
+    }
+
+    /* resume part end*/
+
+    /* portfolio part start*/
+    #portfolio-part {
+        margin-top: 40px;
+    }
+
+    #portfolio-part .titel {
+        margin-bottom: 45px;
+    }
+
+    #portfolio-part .titel h2 {
+        margin-bottom: 20px;
+    }
+
+    #portfolio-part .titel p {
+        font-size: 14px;
+        margin-bottom: 10px;
+
+    }
+
+    #portfolio-part .item-list {
+        text-align: left;
+    }
+
+    #portfolio-part .item-list ul li {
+        margin: 0 9px;
+    }
+
+    #portfolio-part .port-item {
+        margin-top: 20px;
+    }
+
+    /* portfolio part end*/
+
+    /* contact part start */
+    #contact-part {
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    #contact-part .titel {
+        margin-bottom: 40px;
+    }
+
+    #contact-part .titel p {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    #contact-part .titel h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+
+    }
+
+    #contact-part .form-gp input {
+        font-size: 14px;
+        height: 44px;
+        padding: 8px 8px;
+
+    }
+
+    #contact-part .fox {
+        padding-right: 18px;
+    }
+
+    #contact-part .btn {
+        border-radius: 50px;
+        font-size: 15px;
+
+    }
+
+    #contact-part .contact-info {
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+
+    #contact-part .contact-info p {
+        margin-bottom: 20px;
+    }
+
+    #contact-part .contact-info .one .fa {
+        top: 50%;
+        left: 15px;
+
+    }
+
+    /* #contact-part .contact-info .one span i {
 	font-size: 30px;
-	/* margin-right: 3px; */
-}
-#contact-part .contact-info .one .detail h6 {
+} */
+    /* #contact-part .contact-info .one .detail h6 {
 	font-size: 14px;
-}
-#contact-part .contact-info .icon {
-	margin-top: 30px;
-	margin-left: 0;
-	text-align: center;
-}
-#contact-part .contact-info .icon a {
-	margin-left: 0;
-	
-	width: 30px;
-	height: 30px;
-	font-size: 18px;
-	border-radius: 5px;
-	
-	line-height: 30px;
+} */
+    #contact-part .contact-info .icon {
+        margin-top: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
 
-	margin: 0 5px;
-}
+    #contact-part .contact-info .icon a {
+        margin-left: 0;
 
-/* contact part start */
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 5px;
+
+        line-height: 30px;
+
+        margin: 0 5px;
+    }
+
+    /* contact part start */
 
 
 
@@ -354,21 +395,14 @@
 /* small device*/
 
 
-@media (min-width:576px) and (max-width:767px){
-
-
-}
+@media (min-width:576px) and (max-width:767px) {}
 
 
 
 /* medium device*/
 
 
-@media (min-width:768px) and (max-width:991px){
-
-}
+@media (min-width:768px) and (max-width:991px) {}
 
 /* larg device */
-@media (min-width:992px) and (max-width:1199px){
-
-}
+@media (min-width:992px) and (max-width:1199px) {}

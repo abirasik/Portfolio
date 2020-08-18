@@ -1,22 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 ul,
-li{
+li {
     list-style: none;
 }
 
 a,
 a:hover,
-a:focus{
+a:focus {
     text-decoration: none;
     outline: none;
 }
-body{
+
+body {
     background-color: #111;
     color: #9f9f9f;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 h1,
@@ -24,31 +26,35 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    font-family: Poppins,sans-serif;
+h6 {
+    font-family: Poppins, sans-serif;
     font-weight: 500;
 }
-p{
-margin: 0;
-padding: 0;
+
+p {
+    margin: 0;
+    padding: 0;
 }
+
 html,
-body{
+body {
     overflow-x: hidden;
 }
 
-.titel{
+.titel {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 80px;
 }
-.titel p{
+
+.titel p {
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 17px;
     color: #9f9f9f;
 }
-.titel h2{
+
+.titel h2 {
     font-size: 46px;
     margin-bottom: 37px;
     font-weight: 700;
@@ -58,6 +64,7 @@ body{
     position: relative;
     z-index: 9;
 }
+
 .titel .animeted-lin {
     content: '';
     display: block;
@@ -69,7 +76,8 @@ body{
     width: 85px;
     background-color: #f52955;
 }
-.titel .animeted-lin::after{
+
+.titel .animeted-lin::after {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-name: barAnimation;
@@ -80,9 +88,10 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 4px; 
+    width: 4px;
 }
-.titel .animeted-lin::before{
+
+.titel .animeted-lin::before {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-name: barAnimation;
@@ -95,11 +104,13 @@ body{
     left: 8px;
     width: 4px;
 }
-@keyframes barAnimation{
+
+@keyframes barAnimation {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
+
     100% {
         -webkit-transform: translateX(85px);
         transform: translateX(85px);
@@ -111,7 +122,7 @@ body{
 /* =============================
            manu css start
 ================================*/
-nav{
+nav {
     position: absolute !important;
     top: 0;
     left: 0;
@@ -121,10 +132,13 @@ nav{
     padding: -10px 0;
     transition: .4s;
 }
-nav .navbar-nav li{
-margin-right: 30px;;
+
+nav .navbar-nav li {
+    margin-right: 30px;
+    ;
 }
-nav .navbar-nav li a{
+
+nav .navbar-nav li a {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -135,6 +149,7 @@ nav .navbar-nav li a{
     position: relative;
     transition: .6s;
 }
+
 nav ul li a:hover {
     background: #fff;
     color: #000000;
@@ -170,11 +185,12 @@ nav ul li a:hover::after {
 /* =============================
            banner css start
 ================================*/
-#banner-part{
+#banner-part {
     height: 700px;
     position: relative;
 }
-#banner-part .overlay{
+
+#banner-part .overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -186,7 +202,8 @@ nav ul li a:hover::after {
     text-align: center;
     overflow: hidden;
 }
-#banner-part .overlay h1{
+
+#banner-part .overlay h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
     font-weight: 700;
@@ -196,17 +213,20 @@ nav ul li a:hover::after {
     text-transform: uppercase;
     margin-top: 150px;
 }
-#banner-part .overlay h4{
+
+#banner-part .overlay h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: .3px;
     color: #ffffff;
 }
-#banner-part .overlay h4 span{
+
+#banner-part .overlay h4 span {
     color: #f52955;
     text-transform: capitalize;
 }
+
 #banner-part .overlay .arrow {
     border-color: transparent;
     border-style: solid;
@@ -218,33 +238,38 @@ nav ul li a:hover::after {
     text-indent: -9999px;
     transform-origin: 50% 50%;
     width: 0;
-  }
-  #banner-part .overlay .down {
+}
+
+#banner-part .overlay .down {
     -webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
     border-top: 1.5em solid #fff;
     transition: .4s;
-  }
+}
 
-  @-webkit-keyframes downarrow {
+@-webkit-keyframes downarrow {
     0% {
-      -webkit-transform: translateY(0);
-      opacity: 0.4;
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
     }
-    100% {
-      -webkit-transform: translateY(0.4em);
-      opacity: 0.9;
-    }
-  }
-  #banner-part .overlay .down:hover{
-    border-top: 1.5em solid #f52955;
-  }
 
-#banner-part .overlay .sociel-icon{
+    100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.9;
+    }
+}
+
+#banner-part .overlay .down:hover {
+    border-top: 1.5em solid #f52955;
+}
+
+#banner-part .overlay .sociel-icon {
     position: absolute;
     bottom: 50px;
-    right: 40px;;
+    right: 40px;
+    ;
 }
-#banner-part .overlay .sociel-icon a{
+
+#banner-part .overlay .sociel-icon a {
     display: block;
     width: 30px;
     height: 30px;
@@ -256,7 +281,8 @@ nav ul li a:hover::after {
     margin-top: 10px;
     transition: .5s;
 }
-#banner-part .overlay .sociel-icon a:hover{
+
+#banner-part .overlay .sociel-icon a:hover {
     background: #f52955;
     border-radius: 50%;
     color: #fff;
@@ -269,34 +295,38 @@ nav ul li a:hover::after {
 /* =============================
            about css start
 ================================*/
-#about-part{
+#about-part {
     margin: 100px 0;
 }
 
-#about-part .my-img{
- background: #f1f1f1;
- border-radius: 10px;
- box-sizing: border-box;
- overflow: hidden;
+#about-part .my-img {
+    background: #f1f1f1;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
-#about-part .my-img img{
+
+#about-part .my-img img {
     width: 100%;
     transition: .5s;
 }
-#about-part .my-img:hover img{
+
+#about-part .my-img:hover img {
     transform: scale(1.1);
 }
 
-#about-part .my-detail{
+#about-part .my-detail {
     text-align: left;
 }
-#about-part .my-detail h2{
+
+#about-part .my-detail h2 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 15px;
     color: #f52955;
 }
-#about-part .my-detail h6{
+
+#about-part .my-detail h6 {
     font-size: 31px;
     font-weight: 700;
     line-height: 1.6;
@@ -304,32 +334,38 @@ nav ul li a:hover::after {
     color: #fff;
 }
 
-#about-part .my-detail .detail p{
+#about-part .my-detail .detail p {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.95;
     padding-bottom: 29px;
 }
-#about-part .contacet-detail{
+
+#about-part .contacet-detail {
     font-size: 15px;
     margin-bottom: 4px;
     padding: 29px 0;
 }
-#about-part .contact-detail .name{
+
+#about-part .contact-detail .name {
     margin-bottom: 10px;
 }
-#about-part .contact-detail .name p span{
+
+#about-part .contact-detail .name p span {
     color: #dadada;
     font-weight: 400;
     margin-right: 10px;
 }
-#about-part .contact-detail .name p a{
+
+#about-part .contact-detail .name p a {
     color: #f52955;
 }
+
 #about-part .download {
     margin-top: 30px;
 }
-#about-part .download .cv{
+
+#about-part .download .cv {
     display: inline-block;
     margin-right: 120px;
     font-size: 14px;
@@ -339,50 +375,60 @@ nav ul li a:hover::after {
     color: #fff;
     position: relative;
 }
-#about-part .download .cv::after{
+
+#about-part .download .cv::after {
     content: '';
     position: absolute;
     top: 45%;
     right: -100px;
     width: 85px;
     height: 2px;
-    background: rgba(255,255,255,.25);
+    background: rgba(255, 255, 255, .25);
 }
-#about-part .download ul{
+
+#about-part .download ul {
     display: inline-block;
 }
-#about-part .download ul li{
+
+#about-part .download ul li {
     display: inline-block;
     margin-right: 10px;
     font-size: 21px;
-    
+
 }
-#about-part .download ul li a{
+
+#about-part .download ul li a {
     color: #fff;
     transition: .5s;
 }
-#about-part .download ul li:hover a{
+
+#about-part .download ul li:hover a {
     color: #f52955;
 }
-#about-part .survice{
+
+#about-part .survice {
     margin-top: 60px;
 }
-#about-part .survice .titel{
+
+#about-part .survice .titel {
     text-align: left;
 }
-#about-part .survice .titel p{
+
+#about-part .survice .titel p {
     margin-bottom: 10px;
 }
-#about-part .survice .titel h2{
+
+#about-part .survice .titel h2 {
     font-size: 38px;
     margin-bottom: 20px;
 }
 
-#about-part .survice .titel .animeted-lin{
+#about-part .survice .titel .animeted-lin {
     margin-left: unset;
     background-color: #fff;
 }
-#about-part .items{
+
+#about-part .items {
     margin-bottom: 15px;
     padding: 30px;
     background: transparent;
@@ -390,12 +436,14 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
 }
-#about-part .items i{
+
+#about-part .items i {
     color: #f52955;
     font-size: 50px;
     transition: .5s;
 }
-#about-part .items h6{
+
+#about-part .items h6 {
     color: #f3f3f3;
     font-size: 20px;
     font-weight: 500;
@@ -403,7 +451,8 @@ nav ul li a:hover::after {
     margin-bottom: 14px;
     transition: .5s;
 }
-#about-part .items::after{
+
+#about-part .items::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -414,7 +463,8 @@ nav ul li a:hover::after {
     background: #f3f3f3;
     transition: .5s;
 }
-#about-part .items:hover::after{
+
+#about-part .items:hover::after {
     width: 100%;
 }
 
@@ -429,40 +479,48 @@ nav ul li a:hover::after {
     color: #f52955;
 } */
 
-#about-part .testi{
+#about-part .testi {
     margin-top: 60px;
 }
-#about-part .testi .titel{
+
+#about-part .testi .titel {
     text-align: left;
 }
-#about-part .testi .titel p{
+
+#about-part .testi .titel p {
     margin-bottom: 10px;
 }
-#about-part .testi .titel h2{
+
+#about-part .testi .titel h2 {
     font-size: 38px;
     margin-bottom: 20px;
 }
 
-#about-part .testi .titel .animeted-lin{
+#about-part .testi .titel .animeted-lin {
     margin-left: unset;
     background-color: #fff;
 }
-#about-part .testi-slider{
+
+#about-part .testi-slider {
     position: relative;
     margin-bottom: 40px;
 }
-#about-part .testi-slider .item{
+
+#about-part .testi-slider .item {
     padding: 30px 30px;
 }
-#about-part .testi-slider .item .one{
- display: flex;
- justify-content: space-between;
- margin-bottom: 30px;
+
+#about-part .testi-slider .item .one {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
-#about-part .testi-slider .item .one .left{
+
+#about-part .testi-slider .item .one .left {
     display: flex;
 }
-#about-part .testi-slider .item .one .left .img{
+
+#about-part .testi-slider .item .one .left .img {
     width: 60px;
     height: 60px;
     background: #fff;
@@ -470,48 +528,56 @@ nav ul li a:hover::after {
     margin-right: 15px;
     overflow: hidden;
     border: 1px solid #fff;
-} 
-#about-part .testi-slider .item .one .left .img img{
+}
+
+#about-part .testi-slider .item .one .left .img img {
     width: 60px;
 }
-#about-part .testi-slider .item .one .left h6{
+
+#about-part .testi-slider .item .one .left h6 {
     color: #efefef;
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 7px;
 }
-#about-part .testi-slider .item .one .left p{
+
+#about-part .testi-slider .item .one .left p {
     color: #888;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.1;
 }
-#about-part .testi-slider .item .one .right i{
+
+#about-part .testi-slider .item .one .right i {
     font-size: 50px;
     line-height: 1;
     color: #f52955;
 }
-#about-part .testi-slider ul{
+
+#about-part .testi-slider ul {
     position: absolute;
     bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
 }
-#about-part .testi-slider ul li{
+
+#about-part .testi-slider ul li {
     display: inline-block;
     padding: 0 5px;
 
 }
-#about-part .testi-slider ul li button{
+
+#about-part .testi-slider ul li button {
     font-size: 0;
-        width: 15px;
-        height: 15px;
-        background: transparent;
-        border-radius: 50%;
-        border: 1px solid #ffff;
-        transition: .5s;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+    transition: .5s;
 }
-#about-part .testi-slider ul .slick-active button{
+
+#about-part .testi-slider ul .slick-active button {
     background: #ffffff;
 }
 
@@ -524,7 +590,7 @@ nav ul li a:hover::after {
 /* =============================
            resume css start
 ================================*/
-#resume-part{
+#resume-part {
     margin: 80px 0;
     background: url(../images/resume-bg.jpg) no-repeat bottom;
     background-size: cover;
@@ -532,7 +598,8 @@ nav ul li a:hover::after {
     position: relative;
     height: 950px;
 }
-#resume-part .overlay{
+
+#resume-part .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -542,23 +609,26 @@ nav ul li a:hover::after {
     padding: 50px 0;
 }
 
-#resume-part .details h3{
+#resume-part .details h3 {
     font-size: 26px;
     margin-bottom: 20px;
     color: #f0f0f0;
     margin-left: 45px;
 }
-#resume-part .details h3 span{
+
+#resume-part .details h3 span {
     font-size: 30px;
     color: #f52955;
     margin-right: 10px;
 }
-#resume-part .details .resume-item{
+
+#resume-part .details .resume-item {
     padding: 32px 48px;
     margin-bottom: 10px;
     position: relative;
 }
-#resume-part .details .resume-item::after{
+
+#resume-part .details .resume-item::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -569,15 +639,19 @@ nav ul li a:hover::after {
     background: #f52955;
     transition: .5s;
 }
-#resume-part .details .resume-item:hover::after{
+
+#resume-part .details .resume-item:hover::after {
     width: 78%;
 }
-#resume-part .details .resume-item h5{
+
+#resume-part .details .resume-item h5 {
     margin-bottom: 9px;
     font-size: 21px;
-    color: #f0f0f0;;
+    color: #f0f0f0;
+    ;
 }
-#resume-part .details .resume-item span{
+
+#resume-part .details .resume-item span {
     display: inline-block;
     color: #9f9f9f;
     font-size: 15px;
@@ -591,20 +665,21 @@ nav ul li a:hover::after {
 /* =============================
             portf0olio css start
 ================================*/
-#portfolio-part .item-list{
-    text-align: center;  
+#portfolio-part .item-list {
+    text-align: center;
 }
-#portfolio-part .item-list ul li{
+
+#portfolio-part .item-list ul li {
     display: inline-block;
     color: #fff;
     font-size: 18px;
     position: relative;
     transition: .5s;
-     margin: 0 20px;
-     padding: 5px 0;
+    margin: 0 20px;
+    padding: 5px 0;
 }
 
-#portfolio-part .item-list ul li::after{
+#portfolio-part .item-list ul li::after {
     content: '';
     position: absolute;
     width: 0%;
@@ -614,40 +689,47 @@ nav ul li a:hover::after {
     left: 0;
     transition: .5s;
 }
-#portfolio-part .item-list ul li:hover{
+
+#portfolio-part .item-list ul li:hover {
     color: #f52955;
 }
-#portfolio-part .item-list ul li:hover::after{
+
+#portfolio-part .item-list ul li:hover::after {
     width: 100%;
 }
-#portfolio-part .port-item{
+
+#portfolio-part .port-item {
     margin-top: 30px;
 }
-#portfolio-part .port-item .one{
+
+#portfolio-part .port-item .one {
     margin-bottom: 30px;
-    
+
 }
-#portfolio-part .port-item .one .img{
+
+#portfolio-part .port-item .one .img {
     width: 100%;
     height: 300px;
     overflow: hidden;
     background: #f0f0f0;
     position: relative;
     border-radius: 10px;
-   
+
 }
-#portfolio-part .port-item .one .img img{
+
+#portfolio-part .port-item .one .img img {
     width: 100%;
     height: 100%;
-    
+
 }
-#portfolio-part .port-item .one .img .overlay{
+
+#portfolio-part .port-item .one .img .overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 0%;
     height: 0%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: rgba(245, 41, 85, 0.6);
     color: #fff;
     text-align: center;
@@ -658,7 +740,7 @@ nav ul li a:hover::after {
     border-radius: 10px;
 }
 
-#portfolio-part .port-item .one .img .overlay a{
+#portfolio-part .port-item .one .img .overlay a {
     font-size: 18px;
     color: #fff;
     font-weight: bold;
@@ -666,21 +748,25 @@ nav ul li a:hover::after {
     transform: scale(0);
     transition: .4s;
 }
-#portfolio-part .port-item .one .img:hover .overlay{
+
+#portfolio-part .port-item .one .img:hover .overlay {
     width: 95%;
     height: 95%;
 }
-#portfolio-part .port-item .one .img:hover .overlay a{
+
+#portfolio-part .port-item .one .img:hover .overlay a {
     transform: scale(1);
 }
 
 
-#portfolio-part .item-list .mixitup-control-active{
+#portfolio-part .item-list .mixitup-control-active {
     color: #f52955;
 }
-#portfolio-part .item-list .mixitup-control-active::after{
-   width: 100%;
+
+#portfolio-part .item-list .mixitup-control-active::after {
+    width: 100%;
 }
+
 /* =============================
            portfolio css end
 ================================*/
@@ -688,20 +774,23 @@ nav ul li a:hover::after {
 /* =============================
             contact css start
 ================================*/
-#contact-part{
+#contact-part {
     margin-top: 100px;
-    margin-bottom: 80px ;
+    margin-bottom: 80px;
 }
-#contact-part .contact-form h4{
+
+#contact-part .contact-form h4 {
     font-size: 24px;
     font-weight: 500;
     color: #f0f0f0;
     margin-bottom: 30px;
 }
-#contact-part .form-gp{
+
+#contact-part .form-gp {
     margin-bottom: 25px;
 }
-#contact-part .form-gp input{
+
+#contact-part .form-gp input {
     border: none;
     background-color: #161616;
     color: #9f9f9f;
@@ -712,16 +801,20 @@ nav ul li a:hover::after {
     border-radius: 0;
     outline: none;
 }
-#contact-part .form-gp input:focus{
+
+#contact-part .form-gp input:focus {
     border-bottom: 1px solid #f52955;
 }
-#contact-part .fox{
+
+#contact-part .fox {
     padding-right: 0px;
 }
-#contact-part .form-sub{
+
+#contact-part .form-sub {
     width: 100%;
 }
-#contact-part textarea{
+
+#contact-part textarea {
     border: none;
     background-color: #161616;
     color: #9f9f9f;
@@ -731,13 +824,16 @@ nav ul li a:hover::after {
     border-radius: 0;
     outline: none;
 }
-#contact-part textarea:focus{
+
+#contact-part textarea:focus {
     border-bottom: 1px solid #f52955;
 }
-#contact-part .form-ms{
+
+#contact-part .form-ms {
     width: 100%;
 }
-#contact-part .btn{
+
+#contact-part .btn {
     padding: 10px 26px;
     background: #f52955;
     color: #fff;
@@ -746,62 +842,74 @@ nav ul li a:hover::after {
     outline: none;
     transition: .5s;
 }
-#contact-part .btn:hover{
+
+#contact-part .btn:hover {
     border-radius: 30px;
 }
 
-#contact-part .contact-info{
+#contact-part .contact-info {
     padding-left: 20px;
 }
-#contact-part .contact-info h4{
+
+#contact-part .contact-info h4 {
     margin-bottom: 12px;
     color: #f0f0f0;
     font-size: 24px;
     font-weight: 500;
 }
-#contact-part .contact-info p{
+
+#contact-part .contact-info p {
     font-size: 15px;
     margin-bottom: 28px;
 }
-#contact-part .contact-info .media{
+
+#contact-part .contact-info .media {
     align-items: center;
     position: relative;
 }
-#contact-part .contact-info .one .fa{
+
+#contact-part .contact-info .one .fa {
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
     color: #f52955;
 }
-#contact-part .contact-info .one span i{
+
+#contact-part .contact-info .one span i {
     font-size: 36px;
     margin-right: 50px;
-    
+
 }
-#contact-part .contact-info .one .detail{ 
-    border-left: 2px solid rgba(255,255,255,.15);
+
+#contact-part .contact-info .one .detail {
+    border-left: 2px solid rgba(255, 255, 255, .15);
     padding: 17px 0 17px 22px;
     margin-left: 80px;
 }
-#contact-part .contact-info .one .detail h6{
+
+#contact-part .contact-info .one .detail h6 {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 0;
     color: #f0f0f0;
 }
-#contact-part .contact-info .one .detail .det{
+
+#contact-part .contact-info .one .detail .det {
     font-size: 14px;
     width: 400;
 }
-#contact-part .contact-info .one .detail .det a{
+
+#contact-part .contact-info .one .detail .det a {
     color: #f52955;
 }
-#contact-part .contact-info .icon{
+
+#contact-part .contact-info .icon {
     margin-top: 40px;
     margin-left: -2px;
 }
-#contact-part .contact-info .icon a{
+
+#contact-part .contact-info .icon a {
     display: inline-block;
     margin-left: 15px;
     color: #2b2b2b;
@@ -814,12 +922,14 @@ nav ul li a:hover::after {
     line-height: 35px;
     transition: .5s;
 }
-#contact-part .contact-info .icon a:hover{
+
+#contact-part .contact-info .icon a:hover {
     background: #f52955;
     color: #f1f1f1;
     border-radius: 50%;
 }
-.btop{
+
+.btop {
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -834,25 +944,29 @@ nav ul li a:hover::after {
     color: #fff !important;
     transition: .5s;
 }
-.btop:hover{
+
+.btop:hover {
     border-radius: 50%;
 }
+
 /* =============================
           contact css end
 ================================*/
 /* =============================
           footer css start
 ================================*/
-#footer-part{
+#footer-part {
     text-align: center;
     background: #7c7b7bce;
     color: #222;
     padding: 10px 0;
     font-size: 14px;
 }
-#footer-part span{
+
+#footer-part span {
     color: #fff
 }
+
 /* =============================
           footer css end
 ================================*/
